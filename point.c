@@ -17,7 +17,7 @@ void f_ptr(stack_t **head, unsigned int count)
 	{
 		if (h->n > 127 || h->n <= 0)
 		{
-			break;}
+			break; }
 		printf("%c", h->n);
 		h = h->next;
 	}

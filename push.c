@@ -39,5 +39,5 @@ void f_push(stack_t **head, unsigned int count)
 	if (bus.lifi == 0)
 		addnd(head, n);
 	else
-		addque(head,n);
+		addque(head, n);
 }

@@ -13,5 +13,5 @@ void free_stack(stack_t *head)
 	{
 		aux = head->next;
 		free(head);
-		head = aux;}
+		head = aux; }
 }
