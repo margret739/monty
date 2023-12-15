@@ -42,7 +42,6 @@ extern bus_t bus;
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
  * @f: function to handle the opcode
- *
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
@@ -65,12 +64,13 @@ void f_mod(stack_t **head, unsigned int count);
 void f_puchar(stack_t **head, unsigned int count);
 void f_ptr(stack_t **head, unsigned int count);
 void f_rotl(stack_t **head, unsigned int count);
+void f_rotr(stack_t **head, unsigned int count);
 void f_queue(stack_t **head, unsigned int count);
 void f_stack(stack_t **head, unsigned int count);
 void free_stack(stack_t *head);
 void addnd(stack_t **head, int n);
 void addque(stack_t **head, int n);
-int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+int execute(char *content, stack_t **head, unsigned int count, FILE *file);
 char *clean_line(char *content);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
